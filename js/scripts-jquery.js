@@ -5,6 +5,7 @@ $(document).ready(function () {
   console.log(index + ':' + value); 
   $.getJSON('https://api.twitch.tv/kraken/streams/' + value + '?client_id=3ayqtffruo2goxf0cvyp75wjm28g4pq&callback=?', function (data) {
     console.log(data);
+    $('.Grid').append('<div class="grid-items"><p>' + value + '</p></div>');
   });
 
 });
