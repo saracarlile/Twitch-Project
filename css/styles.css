@@ -35,14 +35,28 @@ h1 {
    -webkit-flex-direction: column;
    flex-direction: column;
    background-color: #795548; 
+   margin-bottom: 20px;
 }
 
+
+.Grid::after {
+  content: " ";
+  background-color: #795548; 
+  height: 30px;
+}
 
 .mini-grid {
   display: -webkit-flex;
    display: flex;
    -webkit-flex-direction: row;
    flex-direction: row;
+}
+
+.grid-items {
+     padding: 10px;
+     background-color: #BDBDBD;
+    border-bottom: 2px solid #FFFFFF;
+    border-top: 2px solid #FFFFFF;
 }
 
 .header-div {
@@ -62,8 +76,23 @@ h1 {
    flex: 1 0 0;  /* Small item. */
 }
 
+.content-header{
+   /* This will be twice as big as the small item. */
+   -webkit-flex: 1 0 0; 
+   flex: 1 0 0; 
+}
+
+.content-item {
+  display: -webkit-flex;
+   display: flex;
+   align-items: flex-start;
+   -webkit-flex: 2 0 0;
+   flex: 2 0 0;  /* Small item. */
+}
+
 p {
   font-weight: bold;
+  display: inline-flex;
 }
 
 @media only screen and (max-width: 420px) {
