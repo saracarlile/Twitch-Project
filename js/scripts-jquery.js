@@ -19,10 +19,10 @@ $(document).ready(function () {
          $('.Grid').append('<div class="grid-items"><div class="mini-grid"><div class="content-header"><p>' + value + '</p></div><div class="content-item"><p>' + online + '</p></div></div></div>');
      }
      else if (online === "online"){
-        $('.Grid').append('<div class="grid-items"><p>' + value + '  ' + online +' '+ data.stream.game + '<br/>Status: ' + data.stream.channel.status +'</p></div>');
+        $('.Grid').append('<div class="grid-items"><div class="mini-grid"><div class="content-header"><p>' + value + '</p></div><div class="content-item"><p>' + online +'<br/>Game: '+ data.stream.game + ' <br/>Status: ' + data.stream.channel.status +'</p></div></div></div>');
      }
      else if (online === "never") {
-         $('.Grid').append('<div class="grid-items"><p>' + value + ' does not exist ' +'</p></div>');
+         $('.Grid').append('<div class="grid-items"><div class="mini-grid"><div class="content-header"><p>' + value + '</p></div><div class="content-item"><p> does not exist ' +'</p></div></div></div>');
      }
    
     });
