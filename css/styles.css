@@ -47,6 +47,7 @@ h1 {
 }
 
 .mini-grid {
+   padding-left: 20px;
   display: -webkit-flex;
    display: flex;
    -webkit-flex-direction: row;
@@ -57,7 +58,6 @@ h1 {
 }
 
 .grid-items {
-     padding-left: 20px;
      background-color: #BDBDBD;
     border-bottom: 2px solid #FFFFFF;
     border-top: 2px solid #FFFFFF;
@@ -88,9 +88,10 @@ h1 {
 }
 
 .content-item {
-  display: -webkit-flex;
+   display: -webkit-flex;
    display: flex;
-   align-items: flex-start;
+   -webkit-flex-direction: column;
+   flex-direction: column;
    -webkit-flex: 2 0 0;
    flex: 2 0 0;  /* Small item. */
    color: #757575;
@@ -98,7 +99,13 @@ h1 {
 
 p {
   font-weight: bold;
-  display: inline-flex;
+}
+
+.green-active{
+  background-color: #4CAF50; 
+}
+.black {
+  color: #212121;
 }
 
 @media only screen and (max-width: 420px) {
