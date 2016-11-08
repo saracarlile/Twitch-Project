@@ -45,7 +45,7 @@ h1 {
 img {
    border: 2px solid #616161; 
    border-radius: 2px;
-   margin-left: 18px;
+   margin-top: 8px;
 }
 
 .Grid::after {
@@ -96,6 +96,13 @@ img {
   color: blue;
 }
 
+.content-header-wrap{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+}
+
 .content-item {
   display: -webkit-flex;
   display: flex;
@@ -112,6 +119,10 @@ img {
 p {
   font-weight: bold;
   color: #263238;
+}
+
+a, a:focus, a:hover, a:visited {
+  color: #4285F4;
 }
 
 .green-active {
@@ -167,10 +178,6 @@ button {
   box-shadow:         1px 1px 2px 3px #1C2331;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   
 }
-img {
-  display: block;
-  margin-top: 20px;
-  margin-left: -5px;
-}
+
 
 }
