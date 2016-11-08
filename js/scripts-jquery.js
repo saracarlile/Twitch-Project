@@ -13,10 +13,10 @@ $(document).ready(function () {
       }
 
       if (online === "Offline") {
-        $('.Grid').append('<div class="grid-items"><div class="mini-grid non-active"><div class="content-header"><p><a href="https://www.twitch.tv/' + value + '" target="blank" >' + value + '</a></p></div><div class="content-item"><p><i>' + online + '</i></p></div></div></div>');
+        $('.Grid').append('<div class="grid-items"><div class="mini-grid non-active"><div class="content-header"><p><a href="https://www.twitch.tv/' + value + '" >' + value + '</a></p></div><div class="content-item"><p><i>' + online + '</i></p></div></div></div>');
       }
       else if (online === "Online") {
-        $('.Grid').append('<div class="grid-items"><div class="mini-grid green-active"><div class="content-header"><div><a href="https://www.twitch.tv/' + value + '" target="blank">' + value + '</a></div><div><img src="' + data.stream.preview.small + '"/></div></div><div class="content-item"><p>' + data.stream.game + ': '  + data.stream.channel.status + '</p></div></div></div>');
+        $('.Grid').append('<div class="grid-items"><div class="mini-grid green-active"><div class="content-header"><div><a href="https://www.twitch.tv/' + value + '">' + value + '</a></div><div><img src="' + data.stream.preview.small + '"/></div></div><div class="content-item"><p>' + data.stream.game + ': '  + data.stream.channel.status + '</p></div></div></div>');
       }
       else if (online === "never") {
         $('.Grid').append('<div class="grid-items"><div class="mini-grid non-active"><div class="content-header"><p>' + value + '</p></div><div class="content-item"><p> does not exist ' + '</p></div></div></div>');
