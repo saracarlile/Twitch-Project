@@ -122,4 +122,31 @@ p {
   color: #4285F4;
 }
 
+button {
+  height: 32px;
+  border-radius: 2px;
+  
+}
+
+#all {
+  background-color: #33b5e5;
+  width: 100px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
+#online {
+  width: 50px;
+  margin-bottom: 5px;
+  background-color: #bdbdbd;
+
+}
+
+#offline {
+ width: 50px;
+ margin-bottom: 5px;
+ background-color:  #bdbdbd;
+}
+
 @media only screen and (max-width: 420px) {}
