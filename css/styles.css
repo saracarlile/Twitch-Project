@@ -42,6 +42,8 @@ h1 {
   
 }
 
+
+
 img {
    border: 2px solid #616161; 
    border-radius: 2px;
@@ -55,6 +57,7 @@ img {
 }
 
 .mini-grid {
+  padding-top: 8px;
   padding-left: 20px;
   display: -webkit-flex;
   display: flex;
@@ -96,12 +99,7 @@ img {
   color: blue;
 }
 
-.content-header-wrap{
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-}
+
 
 .content-item {
   display: -webkit-flex;
