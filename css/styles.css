@@ -148,4 +148,9 @@ button {
  background-color:  #bdbdbd;
 }
 
-@media only screen and (max-width: 420px) {}
+@media only screen and (max-width: 420px) {
+  .content-header {
+    margin-right: 20px;
+  }
+
+}
