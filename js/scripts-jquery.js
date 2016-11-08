@@ -13,10 +13,10 @@ $(document).ready(function () {
       }
 
       if (online === "Offline") {
-        $('.Grid').append('<div class="grid-items"><div class="mini-grid non-active"><div class="content-header"><p><a href="https://www.twitch.tv/esl_sc2"' + value + '" target="blank" >' + value + '</a></p></div><div class="content-item"><p>' + online + '</p></div></div></div>');
+        $('.Grid').append('<div class="grid-items"><div class="mini-grid non-active"><div class="content-header"><p><a href="https://www.twitch.tv/' + value + '" target="blank" >' + value + '</a></p></div><div class="content-item"><p>' + online + '</p></div></div></div>');
       }
       else if (online === "Online") {
-        $('.Grid').append('<div class="grid-items"><div class="mini-grid green-active"><div class="content-header"><p><a href="https://www.twitch.tv/esl_sc2"' + value + '" target="blank">' + value + '<a/></p><br /><p><img src="' + data.stream.preview.small + '"/></div><div class="content-item"><p class="black">' + online + '<p><strong>Game: </strong>' + data.stream.game + '</p>' + '<p><strong>Status: </strong>' + data.stream.channel.status + '</p></div></div></div>');
+        $('.Grid').append('<div class="grid-items"><div class="mini-grid green-active"><div class="content-header"><p><a href="https://www.twitch.tv/' + value + '" target="blank">' + value + '<a/></p><br /><p><img src="' + data.stream.preview.small + '"/></div><div class="content-item"><p class="black">' + online + '<p><strong>Game: </strong>' + data.stream.game + '</p>' + '<p><strong>Status: </strong>' + data.stream.channel.status + '</p></div></div></div>');
       }
       else if (online === "never") {
         $('.Grid').append('<div class="grid-items"><div class="mini-grid non-active"><div class="content-header"><p>' + value + '</p></div><div class="content-item"><p> does not exist ' + '</p></div></div></div>');
