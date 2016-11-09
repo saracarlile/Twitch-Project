@@ -128,10 +128,6 @@ a, a:focus, a:hover, a:visited {
   color: black;
 }
 
-.black {
-  color: #4285F4;
-}
-
 button {
   height: 44px;
   border-radius: 2px;
