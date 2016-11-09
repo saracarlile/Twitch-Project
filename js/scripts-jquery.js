@@ -19,7 +19,7 @@ $(document).ready(function () {
         $('.Grid').append('<div class="grid-items"><div class="mini-grid green-active"><div class="content-header"><div><a href="https://www.twitch.tv/' + value + '">' + value + '</a></div><div><img src="' + data.stream.preview.small + '"/></div></div><div class="content-item"><p>' + data.stream.game + ': '  + data.stream.channel.status + '</p></div></div></div>');
       }
       else if (online === "never") {
-        $('.Grid').append('<div class="grid-items"><div class="mini-grid non-active"><div class="content-header"><p>' + value + '</p></div><div class="content-item"><p> does not exist ' + '</p></div></div></div>');
+        $('.Grid').append('<div class="grid-items"><div class="mini-grid non-existent"><div class="content-header"><p>' + value + '</p></div><div class="content-item"><p> does not exist ' + '</p></div></div></div>');
       }
     });
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 
   $('#offline').on('click', function () {
-    $('.green-active').css('display', 'none');
+    $('.green-active, .non-existent').css('display', 'none');
     $('.non-active').css('display', 'flex');
     $('#offline').css('background-color', '#33b5e5');
     $('#all, #online').css('background-color', '#bdbdbd');
@@ -35,15 +35,14 @@ $(document).ready(function () {
 
   $('#online').on('click', function () {
     $('.green-active').css('display', 'flex');
-    $('.non-active').css("display", 'none');
+    $('.non-active, .non-existent').css("display", 'none');
     $('#online').css('background-color', '#33b5e5');
     $('#all, #offline').css("background-color", "#bdbdbd");
 
   });
 
   $('#all').on('click', function () {
-    $('.green-active').css('display', 'flex');
-    $('.non-active').css('display', 'flex');
+    $('.non-active, .non-existent, .green-active').css('display', 'flex');
     $('#all').css('background-color', '#33b5e5');
     $('#online, #offline').css('background-color', '#bdbdbd');
 
