@@ -3,7 +3,8 @@ $(document).ready(function () {
   var online;
 
   $.each(userNames, function (index, value) {  //build DOM from API results sending userNames array
-    $.getJSON('https://api.twitch.tv/kraken/streams/' + value + '?client_id=lwqoscrxiee347pi183ialxp5z7r8rq&callback=?', function (data) {
+    $.getJSON('https://wind-bow.hyperdev.space/twitch-api/streams/' + value + '?&callback=?', function (data) {
+     console.log(data);
       if (data.hasOwnProperty('stream')) {
         data.stream === null ? online = "Offline" : online = "Online";
       }
