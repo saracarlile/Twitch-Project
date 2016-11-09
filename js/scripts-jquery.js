@@ -4,7 +4,6 @@ $(document).ready(function () {
 
   $.each(userNames, function (index, value) {  //build DOM from API results sending userNames array
     $.getJSON('https://wind-bow.hyperdev.space/twitch-api/streams/' + value + '?&callback=?', function (data) {
-     console.log(data);
       if (data.hasOwnProperty('stream')) {
         data.stream === null ? online = "Offline" : online = "Online";
       }
